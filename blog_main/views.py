@@ -15,7 +15,7 @@ def home(request):
         'featured_posts' : featured_posts,
         'posts' : posts,
     }
-    return render(request, 'home.html', context)
+    return render(request,'home.html', context)
 
 def register(request):
     if request.method == 'POST':
